@@ -1,0 +1,90 @@
+/* styleB.css - Float-based responsive layout (no flex, no grid, no bootstrap) */
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 20px;
+	background: #fff;
+	color: #222;
+}
+
+.page-title { margin: 0 0 12px 0; font-size: 18px; }
+
+.sidebar {
+	width: 220px;
+	float: left;
+	margin-right: 20px;
+	height: 100vh; /* full viewport height */
+	border: 6px solid #d22;
+}
+
+.board {
+	border: 6px solid #d22;
+	padding: 10px;
+	overflow: hidden; /* contain floats */
+	background: #fff;
+	margin-left: 240px; /* leave room for floated sidebar (width + gap) */
+	height: 100vh;
+}
+
+/* ensure all boxes inside the board use the exact same border */
+.board .box {
+	border: 4px solid #d22 !important;
+}
+
+.main {
+	overflow: hidden;
+	height: 100%;
+}
+
+.box {
+	border: 4px solid #d22;
+	background: #fff;
+	min-height: 40px;
+	margin: 2px;
+	padding: 8px;
+	box-sizing: border-box;
+}
+
+/* top row: four equal boxes (25% each) */
+.top-row { overflow: hidden; margin-bottom: 2px; height: 20%; }
+.top-row .box.small {
+	width: calc(25% - 4px);
+	float: left;
+	height: 100%;
+	margin-right: 2px;
+}
+.top-row .box.small.last { margin-right: 2px; }
+
+/* middle area: left column stacked two boxes 50% each, right column single tall box */
+.mid-row { margin-top: 2px; overflow: hidden; height: 55%; }
+.mid-left { width: calc(50% - 2px); float: left; margin-right: 2px; height: 100%; }
+.mid-right { width: calc(50% - 2px); float: right; height: 100%; }
+
+.mid-left .box { width: 100%; height: calc(50% - 2px); margin-bottom: 2px; }
+.mid-left .box:last-child { margin-bottom: 0; }
+.mid-right .mid-right-full { height: 100%; }
+
+/* bottom row: two boxes side by side */
+.bottom-row { margin-top: 2px; overflow: hidden; height: calc(25% - 4px); }
+/* remove internal margins for bottom children so they fill the row */
+.bottom-row .big-left { width: 65%; float: left; height: 100%; margin: 0; box-sizing: border-box; }
+.bottom-row .big-right { width: 35%; float: left; height: 100%; margin: 0; box-sizing: border-box; }
+
+.large-vertical { height: 420px; }
+
+.clear { clear: both; }
+
+/* Responsive break: stack everything vertically when viewport <= 750px */
+@media (max-width: 750px) {
+	.board { border-width: 4px; margin-left: 0; height: auto; }
+	.sidebar { float: none; width: 100%; height: auto; margin-right: 0; }
+	.top-row .box.small, .mid-left, .mid-right, .bottom-row .big-left, .bottom-row .big-right {
+		float: none !important;
+		width: 100% !important;
+	}
+	/* stack rows and let content determine heights so boxes don't disappear */
+	.top-row, .mid-row, .bottom-row { height: auto !important; }
+	.top-row .box.small { height: 80px; display: block; }
+	.mid-left .box, .mid-right .mid-right-full, .bottom-row .big-left, .bottom-row .big-right { height: auto !important; min-height: 80px; display: block; }
+	.large-vertical { height: auto; min-height: 120px; }
+}
+
