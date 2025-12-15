@@ -1,3 +1,6 @@
+Link to the live site:
+https://itamaro2.github.io/Matala-2-/
+
 # HTML & CSS Layout Challenge: Manual vs. AI (Copilot)
 
 This project demonstrates four different approaches to building a specific responsive web layout. The primary goal was to practice foundational CSS concepts (Floats, Box Model) manually, and then compare that process with modern techniques (Flexbox, Bootstrap) generated with the assistance of GitHub Copilot.
@@ -54,3 +57,4 @@ The project contains an index file that links to all four versions of the layout
 1.  Clone or download the repository.
 2.  Open `Hagasha.HTML` in any web browser.
 3.  Click the links to view the different versions.
+
