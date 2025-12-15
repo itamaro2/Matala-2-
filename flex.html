@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="he">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Flex Layout</title>
+  <link rel="stylesheet" href="flex.css" />
+</head>
+<body>
+  <div class="layout">
+    <!-- פס צד שמאלי -->
+    <aside id="sidebar" class="col-2 frame"></aside>
+
+    <!-- אזור ימני ראשי עם מסגרת חיצונית -->
+    <main id="main" class="col-10 frame">
+      <!-- שורה עליונה: 4 ריבועים -->
+      <section class="row top">
+        <div class="col-3 box"></div>
+        <div class="col-3 box"></div>
+        <div class="col-3 box"></div>
+        <div class="col-3 box"></div>
+      </section>
+
+      <!-- אזור אמצעי: שמאל שתי תיבות (חצי רוחב) + ימין תיבה גבוהה (חצי רוחב) -->
+      <section class="row mid">
+        <div class="left col-6">
+          <div class="box"></div>
+          <div class="box"></div>
+        </div>
+        <div class="right col-6">
+          <div class="box tall"></div>
+        </div>
+      </section>
+
+      <!-- שורה תחתונה: מלבן רחב + מלבן צר -->
+      <section class="row bottom">
+        <div class="col-9 box"></div>
+        <div class="col-3 box"></div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,107 @@
+
+* {
+    margin: 0px;
+    box-sizing:border-box;
+    padding: 4px;
+} 
+
+[class*="col-"] {
+float: left;
+border: 3px solid #e70909;}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+html, body {
+    height: 100%;
+    margin: 1px; 
+    padding: 5px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.no-border {
+    border: none;
+}
+
+#id1{
+    height: 100%;
+}
+
+#id2 {
+    height: 100%;
+    padding: 10px;
+}
+
+#id3, #id4, #id5, #id6 {
+    height: 100%;
+}
+
+#id7 {
+    border: none;
+    height: 20%;
+}
+
+#id8, #id9 {
+    border: none;
+    height: 40%;
+}
+
+#id10 {
+    height: 100%;
+    padding: 0px;
+}
+
+#id11, #id12{
+    height: 45%;
+    margin-bottom: 24px;
+}
+
+#id13, #id14, #id15 {
+    height: 100%;
+}
+
+@media screen and (max-width: 750px) {
+    [class*="col-"] {
+        width: 100%;
+        float: none;   
+        display: block; 
+        margin-top: 5px;
+    }
+    
+    #id2, #id7, #id8, #id9, #id10 {
+        height: auto
+    }
+    
+    #id1 {
+        height: 60px;
+    }
+    
+    #id3, #id4, #id5, #id6 {
+        height: 80px;
+    }
+    
+    #id11, #id12 {
+        height: 100px;
+    }
+    
+    #id13, #id14 {
+        height: 150px;
+    }
+    
+    #id15 {
+        height: 200px;
+    }
+}
