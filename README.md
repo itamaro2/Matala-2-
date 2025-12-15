@@ -1,4 +1,4 @@
-Link to the live site:
+Click to view Live site:
 https://itamaro2.github.io/Matala-2-/
 
 # HTML & CSS Layout Challenge: Manual vs. AI (Copilot)
@@ -54,8 +54,9 @@ The project contains an index file that links to all four versions of the layout
 * **Copilot Plain, Flexbox, & Bootstrap:** Generated using **GitHub Copilot** to explore how AI handles different CSS methodologies and framework integration.
 
 🚀 How to Run
-1.  Clone or download the repository.
-2.  Open `index.html` in any web browser.
-3.  Click the links to view the different versions.
+Since this project is hosted on GitHub Pages, you can view the live demonstration directly without cloning the repository.
+1.  **View the Live Demo:** Click the link at the top to this file to open the main index page.
+2.  **Navigate:** Use the links on the index page to explore each of the four layout implementations.
+
 
 
