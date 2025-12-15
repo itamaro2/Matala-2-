@@ -9,7 +9,7 @@ This project demonstrates four different approaches to building a specific respo
 
 The project contains an index file that links to all four versions of the layout:
 
-* **Main Index:** `Hagasha.HTML` - Open this file to navigate between the different implementations.
+* **Main Index:** `index.html` - Open this file to navigate between the different implementations.
 
 🛠️ Implementations
 
@@ -55,6 +55,7 @@ The project contains an index file that links to all four versions of the layout
 
 🚀 How to Run
 1.  Clone or download the repository.
-2.  Open `Hagasha.HTML` in any web browser.
+2.  Open `index.html` in any web browser.
 3.  Click the links to view the different versions.
+
 
